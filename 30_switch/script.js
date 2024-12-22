@@ -1,14 +1,19 @@
-let numero = 5;
+let nome = 'Gustavo';
 
-while(numero < 50) {
-   console.log(numero);
-   numero += 10;
+switch(nome) {
+   case 'Gustavo':
+      console.log('O nome é Gustavo');
+      break;
+   case 'João':
+      console.log('O nome é João');
+      break;
+      default:
+         console.log('O nome não foi encontrado');
+         break;
 }
 
-for(let i = 0; i < 10; i++) {
-   console.log('O i é ' + i);
-}
-
-for(let i = 10; i > 0; i--) {
-   console.log('O i é ' + i);
+if(nome == 'Gustavo') {
+   console.log('O nome é Gustavo');
+} else {
+   console.log('O nome não foi encontrado');
 }
